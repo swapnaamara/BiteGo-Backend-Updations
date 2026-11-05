@@ -20,4 +20,5 @@ app.use('/api/orders', require('./routes/orderRoutes'));
 app.get('/', (req,res) => res.send("Bitego Backend Running"));
 
 const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
