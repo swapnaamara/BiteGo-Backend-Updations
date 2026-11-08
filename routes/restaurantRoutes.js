@@ -16,5 +16,4 @@ router.get('/:id', getRestaurantById);
 router.post('/', auth, createRestaurant); // Only restaurant owner/admin
 
 router.put('/:id', auth, updateRestaurant);
-
 module.exports = router;
