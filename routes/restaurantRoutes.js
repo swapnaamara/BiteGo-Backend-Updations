@@ -8,6 +8,7 @@ const {
   createRestaurant, 
   updateRestaurant 
 } = require('../controllers/restaurantController');
+
 const auth = require('../middleware/authMiddleware');
 
 router.get('/', getRestaurants);
