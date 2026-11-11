@@ -10,7 +10,7 @@ const auth = require('../middleware/authMiddleware');
 
 router.post('/', auth, placeOrder);
 
-router.get('/myorders', auth, getMyOrders); // Customer
+router.get('/myorders', auth, getMyOrders); 
 
 router.get('/restaurant', auth, getRestaurantOrders); // Restaurant owner
 
