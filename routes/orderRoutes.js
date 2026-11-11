@@ -10,6 +10,7 @@ const {
 const auth = require('../middleware/authMiddleware');
 
 router.post('/', auth, placeOrder);
+
 router.get('/myorders', auth, getMyOrders); 
 router.get('/restaurant', auth, getRestaurantOrders); // Restaurant owner
 router.put('/:id/status', auth, updateOrderStatus); // Restaurant/Rider/Admin
